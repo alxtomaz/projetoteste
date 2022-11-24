@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Open+Sans:wght@300;600 & família = Hubballi &família= Montserrat:ital,wght@0,400;1,700 &family display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bc6e1be1b.js" crossorigin="anonymous"></script>
+    
+    <style>
+        #header {
+            background-color: rgb(230, 188, 137);
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-family: 'Hubballi', cursive;                            
+        }
+
+        #nameAndTitle {
+            background-color: white; /*cor da div*/
+            width: 500px; /*largura da Div*/
+            margin: 0 auto;/*alinha a div no centro*/
+            text-align: center;  /*alinhando o texto no centro*/         
+        }
+        #nameAndTitle h1, h2 {
+            margin: 0;/*espaço entre as margens fica em 0, aproximando os textos*/
+        }
+
+        h1, h2, h3 {
+            text-transform: uppercase;/*colocando todas tags em caixa alta*/
+        }
+        #contact {
+            list-style-type: none; /*mudando a caixa seletora pra nenhuma, lebrando que pode mudar para outras */
+        }
+        #contact i{            
+            width: 30px; /*largura*/
+            color: rgb(230, 188, 137); /*cor da tag i*/
+        }
+        #container {
+            display: grid; /*mode de visualição em 2 dimensão*/
+            grid-template-columns: 30% auto; /*porcentagem de divisão da pagina, sendo que auto é o restante */
+            grid-column-gap: 20px; /*espaço entre as colunas*/
+
+        }
+        #sidebar, content {
+            display: flex; /*mode de visualição em colunas 1 dimensão*/
+            flex-direction: column; /*direção em colunas*/
+            row-gap: 20px; /*entre cada linha dessa coluna espaço de 20px*/
+        }    
+       .card h3 {
+        font-family: 'Hubballi', cursive; /*texto tirado do fontgoogle nas tags h3*/   
+       }
+
+       .card {
+        font-family: 'Montserrat', sans-serif; /*texto tirado do fontgoogle todo tipo de texto sem ser h3*/
+        border: 1px solid rgb(48, 48, 48); /*cor da borda*/
+        border-radius: 15px;/*pontas arrendodas das caixas*/
+        padding: 20px; /*espaço entre as margens dentro das div*/
+       }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="nameAndTitle">
+            <h1>Alex Tomaz de Araujo</h1>
+            <h2>GERENTE</h2>
+        </div>
+    </div>
+    <div id="container">
+        <div id="sidebar">
+            <div class="card">
+                <h3>Contatos</h3>
+                <ul id="contact">
+                    <li><i class="fa-solid fa-envelope"></i>alextomaz70@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i>(12) 98266-9659</li>
+                    <li><i class="fa-solid fa-location-dot"></i>São José dos Campos</li>
+            </div>
+            <div class="card">
+                <h3>Skills</h3>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+            </div>
+            <div class="card">
+                <h3>Formação Academica</h3>
+                <ul>
+                    <li>Analista de Sistema</li>
+                    <li>Tecnico de Informatica</li>                    
+            </div>
+            <div class="card">
+                <h3>Links</h3>
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/alextomaz/">Linkedin</a></li>
+                    <li><a target="_blank" href="https://pt-br.facebook.com/">facebook</a></li>                        
+            </div>
+        </div>
+        <div id="content">
+            <div class="card">
+                    <h3>Sobre mim</h3>
+                    <p>Sim, curvo-me ante a beleza de ser
+                        às vezes zombo de mim mesmo ao término de uma
+                        inteligente e aguçada constatação.
+                        Ermitão do insólito, poeta da dúvida
+                        Entretanto duvido a dúvida por ser dúvida
+                        fruto de uma premissa lógica
+                        Mas nego, afirmo e não duvido de nada
+                        Prisioneiro sem grade desse silêncio eterno.
+                    </p>
+            </div>
+            <div class="card">
+                <h3>Experiencias Profissionais</h3>
+                <p>
+                    <b>Dm Service Telecom - jan/17 a dez/19</b><br>
+                    girg rjgirbgr grhgrubgr                    
+                    <ul>
+                        <li>Lider de transporte</li>
+                        <li>administrativo</li>
+                    </ul>
+                <p>
+                    <b>Una Telecom - jan/20 a dez/21</b><br>
+                        girg rjgirbgr grhgrubgr                    
+                    <ul>
+                        <li>Supervisor de Redes Telecom</li>
+                        <li>gerente de vendas</li>    
+                    </ul>                    
+                </p>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>

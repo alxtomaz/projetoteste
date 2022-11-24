@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:ital,wght@0,400;1,700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bc6e1be1b.js" crossorigin="anonymous"></script>    
+
+    <title>Portifólio</title>
+</head>
+
+<style>
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .container {
+        display: grid; /* vai colocar todas div em grid*/
+        grid-auto-flow: column; /*vai colocar as div filha do container vai criar uma coluna*/
+        grid-auto-columns: 1fr;/* cada coluna vai ser 1frame, cada frame vai ocupar espaço igual divisão entre as divs*/
+            }
+    #header {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+        text-decoration-line: underline;
+
+        color: #070F18;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #menu {
+        text-align: right;
+        margin-top: 49px;
+        
+            }
+    #menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #menu li {
+        display: inline-block;
+        margin-left: 20px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      
+        text-align: center;
+
+        color: #070F18;
+    }
+   
+    a {
+        color: black;
+        text-decoration: none;
+        
+    }
+    #buttonCta {
+        background: #1F7CFF;
+        border-radius: 50px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px 25px 10px 25px;
+    }    
+    #headerCta p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #575455;
+    }
+    #services p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #575455;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #headerCta h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold; /* negrito, expessura da palavra*/
+        font-size: 50px; /* tamanho da letra*/
+        line-height: normal; /*tamanho da letra*/
+        color: #000000;
+    }
+    #headerImg {
+       margin-left: 50px;        
+    }
+    #headerImg img {
+        width: 100%;
+        border-radius: 13%;
+    }
+    .headerLogo {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #headerClientText {
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 24px;
+        color: #070F18;
+    }
+    h2.red {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #F75C4E;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+    h1.black {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        text-align: center;
+        color: #000000;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #textCenter, #form p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;        
+        color: #575455;
+    }
+   #services h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #070F18;
+   }
+   #services {
+        text-align: center;
+   }
+   #services i {
+        margin-top: 30px;
+        color: #1F7CFF;
+        font-size: 30px; /*aumenta o tamnho do icone/img */
+   }
+   #bodyImg {
+       margin-left: 50px;        
+    }
+    #bodyImg img {
+        width: 100%;
+        border-radius: 13%;
+    }
+    #form {
+        margin-top: 68px;
+        
+    }
+    #input {
+        margin-left: 75px;
+    }
+    #inputDados {
+        background: #F5F6FB;
+        border-radius: 50px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;       
+        color: #575455;
+        width: 100%; /*largura*/
+        height: 48px; /*altura*/
+        border: 0;/* tira a borda do input*/
+        text-align: center;
+        margin-top: 20px; 
+                 
+    }
+    #buttonForm {
+        background-color: #1F7CFF;
+        border-radius: 50px;
+        width: 180px;
+        height: 48px;
+        margin-top: 20px;
+        border: 0;/* tira a borda do input*/
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    #PortfolioTitle {
+        margin-top: 100px;
+        margin-right: 800px;    
+    }
+    #portImg {
+        margin-top: 70px;
+        margin-left: 70px;
+        width: 100%;
+    }
+    #portImg img {
+        padding: 20px;
+    }
+   </style>
+<body>
+    <div class="container">
+        <div id="header">Portfólio</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#services">Meus Serviços</a></li>
+                <li><a href="#form">Contatos</a></li>
+                <li><a href="#portImg">Portfólio</a></li>
+            </ul>
+        </div>     
+    </div>
+    <div class="container">
+        <div id="headerCta">
+            <h1>Olá, meu nome<br> 
+                é Maria
+            </h1>
+            <p>
+                Sou programadora e gostaria de apresentar meu<br> 
+                trabalho para você através deste portfólio.
+            </p>
+            <a id="buttonCta" href="">Meus Serviços</a>              
+         </div>
+        <div id="headerImg">
+            <img src="img/header.svg">
+        </div>
+    </div>  
+    <div class="container" id="clients"> 
+        <div id="headerClientText">
+            Alguns dos<br>
+            meus clientes
+        </div>
+        <div class="headerLogo"><img src="img/apple.svg"></div>
+        <div class="headerLogo"><img src="img/apple.svg"></div>
+        <div class="headerLogo"><img src="img/spotify.svg"></div>
+    </div>
+    <div class ="container" id="textCenterr">
+        <div id="services">
+        <h2 class="red">Conheça</h2><br>
+        <h1 class="black">Meus Serviços</h1><br>
+        <p>
+            Vou ajudar a sua empresa a<br>
+            alcançar grandes resultados.
+        </p>  
+        </div>
+    </div>
+    <div class="container" id ="services">
+        <div class="textCenter">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Consultoria</h3>
+            <p>
+                Te ajudo a organizar sua empresa e<br>
+                melhorar seus resultados.
+            </p>
+        </div>
+        <div class="textCenter">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h3>Email Marketing</h3>
+            <p>Gerenciar campanhas é difícil.<br>
+                Conte comigo para te ajudar.</p>
+        </div>            
+        <div class="textCenter">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Criação de sites</h3>
+            <p>Desenvolvo seu site inteiro<br>
+                do zero e te entrego prontinho.
+            </p>
+        </div>            
+    </div>
+    <div class="container" id="form">
+        <div id="bodyImg">
+                <img src="img/body.svg">
+        </div>
+        <div id="input">
+            <h2 class="red">Economize seu tempo</h2>
+            <h1 class="black">Ganhe mais dinheiro</h1>
+            <p>
+                Digite aqui seu endereço de e-mail. Eu entrarei em<br>
+                contato para fornecer um diagnóstico gratuito.
+            </p>
+            <form action="https://formspree.io/f/mlevvboz" method="POST">      
+                <input id="inputDados" placeholder="E-mail" type="text" required="required" value="" name="Email">
+                <button id="buttonForm" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="PortfolioTitle">
+        <div>
+        <h2 class="red"> Conheça meu trabalho</h2>
+        <h1 class="black">Portfolio</h1>
+        </div>    
+    </div>
+    <div class="container" id="portImg"> 
+        <img src="img/port1.svg">    
+        <img src="img/port2.svg"> 
+        <img src="img/port3.svg">          
+    </div> 
+    
+</body>
+</html>
